@@ -11,6 +11,7 @@
 #define NUM    2
 #define FN     3
 #define SCROLL 4
+#define M-MOUSE 5
 
 &pointing_listener {
     input-processors = <
@@ -21,6 +22,7 @@
     scroller {
         layers = <SCROLL>;
         input-processors = <
+            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT) 
             &zip_xy_to_scroll_mapper
             &zip_scroll_scaler 1 2
         >;
@@ -87,6 +89,15 @@
 &trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
 &trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
+            >;
+        };
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
             >;
         };
     };

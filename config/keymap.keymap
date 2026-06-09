@@ -11,7 +11,7 @@
 #define NUM    2
 #define FN     3
 #define SCROLL 4
-#define M-MOUSE 5
+#define M_MOUSE 5
 
 &pointing_listener {
     input-processors = <

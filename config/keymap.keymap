@@ -36,7 +36,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo>, <&mkp>;
         };
     };
 };
@@ -111,7 +111,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans                  &trans   &trans   &trans     &trans    &middle_layer 4 MB3  &mkp MB2
 &trans  &trans  &trans  &trans  &mkp MB1  &trans  &trans  &trans  &trans   &trans   &kp LC(C)  &mkp MB1  &mkp MB3             &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &kp LC(V)  &trans    &trans               &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans     &trans    &trans               &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &to 5   &trans   &trans   &trans     &trans    &trans               &trans
             >;
         };
     };

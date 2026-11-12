@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&mo>, <&mkp>;
         };
     };
@@ -69,8 +69,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LC(X)  &mkp MB4  &mkp MB5  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(C)  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(V)  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(C)  &mkp MB1  &mkp MB3  &mkp MB1  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(V)  &mkp MB2  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0   &trans     &trans    &trans    &trans    &trans  &trans
             >;
         };
@@ -88,7 +88,7 @@
         layer_3 {
             bindings = <
 &trans        &trans         &trans     &trans      &trans        &trans                                      &trans  &trans  &trans  &trans   &trans  &trans
-&out OUT_USB  &kp KP_EQUAL   &kp KP_N7  &kp KP_N8   &kp KP_N9     &kp KP_MULTIPLY                             &trans  &trans  &trans  &trans   &trans  &trans
+&out OUT_USB  &kp KP_EQUAL   &kp KP_N7  &kp KP_N8   &kp KP_N9     &kp KP_MULTIPLY                             &trans  &trans  &trans  &trans   &trans  &kp DEL
 &bt BT_SEL 2  &kp KP_DIVIDE  &kp KP_N4  &kp KP_N5   &kp KP_N6     &kp KP_MINUS     &trans         &trans      &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans
 &bt BT_SEL 1  &kp KP_N0      &kp KP_N1  &kp KP_N2   &kp KP_N3     &kp KP_PLUS      &kp C_AL_CALC  &trans      &kp F1  &kp F2  &trans  &trans   &trans  &trans
 &bt BT_SEL 0  &out OUT_BLE   &kp KP_N0  &kp KP_DOT  &kp C_VOL_DN  &kp C_VOL_UP     &kp KP_NUM     &bt BT_CLR  &trans  &trans  &trans  &trans   &trans  &trans
@@ -108,7 +108,7 @@
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans                  &trans   &trans   &trans     &trans    &trans               &trans
-&trans  &trans  &trans  &trans  &trans    &trans                  &trans   &trans   &trans     &trans    &middle_layer 4 MB3  &mkp MB2
+&trans  &trans  &trans  &trans  &trans    &trans                  &trans   &trans   &kp LC(X)  &trans    &middle_layer 4 MB3  &mkp MB2
 &trans  &trans  &trans  &trans  &mkp MB1  &trans  &trans  &trans  &trans   &trans   &kp LC(C)  &mkp MB1  &mkp MB3             &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &kp LC(V)  &trans    &trans               &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &to 0   &trans   &trans   &trans     &trans    &trans               &trans
